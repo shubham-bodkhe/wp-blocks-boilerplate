@@ -1,0 +1,3 @@
+{
+    "extends": [ "plugin:@wordpress/eslint-plugin/with-formatting-style","prettier" ]
+}
