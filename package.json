@@ -20,6 +20,11 @@
 			"@wordpress/stylelint-config/scss"
 		]
 	},
+	"lint-staged":{
+		"*.{js,scss}": ["wp-scripts lint-js","wp-scripts format"],
+		"*.{js,scss}": ["npx stylelint --fix"]
+	}
+,
 	"devDependencies": {
 		"@wordpress/eslint-plugin": "^14.6.0",
 		"@wordpress/prettier-config": "^2.16.0",
@@ -27,6 +32,7 @@
 		"@wordpress/stylelint-config": "^21.16.0",
 		"eslint-config-prettier": "^8.8.0",
 		"husky": "^8.0.3",
+		"lint-staged": "^13.2.2",
 		"stylelint": "^14.16.1"
 	}
 }
